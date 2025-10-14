@@ -700,7 +700,6 @@ export default function CircusDailyEstimation() {
                     <span className="text-red-900 font-bold">Package Price:</span>
                     <span className="font-bold text-red-600">20,000 euros</span>
                   </div>
-                  <p className="text-sm text-gray-600 mt-3 italic">Package discount: 2,500 euros savings (11% off) when bundled with base app</p>
                   <div className="mt-4 bg-white p-4 rounded border">
                     <p className="text-sm text-gray-700"><strong>Includes:</strong> Complete SSO implementation for Google, Facebook, and Apple across iOS and Android platforms, with user profile management and security compliance.</p>
                   </div>
