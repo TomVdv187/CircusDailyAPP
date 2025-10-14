@@ -8,9 +8,23 @@ export default function CircusDailyEstimation() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4">
       <div className="max-w-7xl mx-auto">
         <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white p-8 rounded-xl shadow-2xl mb-8">
-          <h1 className="text-4xl font-bold mb-2">Circus Daily Mobile App</h1>
-          <p className="text-lg opacity-90">Complete Development Estimation & Analysis</p>
-          <p className="text-sm mt-2 opacity-75">Based on Rossel Applications Sudinfo Model</p>
+          <div className="flex items-center mb-4">
+            <img 
+              src="https://lfs-ipx.circusdaily.com/_ipx/f_webp,sharpen_100/local/CircusDaily_H_Red_FR.svg" 
+              alt="Circus Daily Logo" 
+              className="h-12 mr-4 filter brightness-0 invert"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'block';
+              }}
+            />
+            <span className="text-4xl font-bold" style={{display: 'none'}}>Circus Daily</span>
+            <div>
+              <h1 className="text-3xl font-bold">Mobile App</h1>
+              <p className="text-lg opacity-90">Development Estimation</p>
+            </div>
+          </div>
+          <p className="text-sm opacity-75">Based on Rossel Applications Sudinfo Model</p>
         </div>
 
         <div className="flex space-x-2 mb-6 overflow-x-auto bg-white p-2 rounded-lg shadow">
