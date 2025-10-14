@@ -558,22 +558,6 @@ export default function CircusDailyEstimation() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-red-50 p-6 rounded-lg border-2 border-red-200">
-                <h3 className="font-bold text-xl mb-4 text-red-900">Final Pricing</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center text-lg">
-                    <span className="text-gray-700">Standard Development Cost:</span>
-                    <span className="font-bold line-through text-gray-500">22,500 euros</span>
-                  </div>
-                  <div className="flex justify-between items-center text-2xl pt-3 border-t-2 border-red-200">
-                    <span className="text-red-900 font-bold">Package Price:</span>
-                    <span className="font-bold text-red-600">20,000 euros</span>
-                  </div>
-                  <div className="mt-4 bg-white p-4 rounded border">
-                    <p className="text-sm text-gray-700"><strong>Includes:</strong> Complete SSO implementation for Google, Facebook, and Apple across iOS and Android platforms, with user profile management and security compliance.</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         )}
@@ -584,13 +568,13 @@ export default function CircusDailyEstimation() {
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Development Roadmap & Timeline</h2>
               
               <div className="mb-8 bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-                <h3 className="font-bold text-xl mb-3 text-green-800">Post-Agreement Timeline</h3>
+                <h3 className="font-bold text-xl mb-3 text-green-800">Development Start: November 1st, 2025</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Once we have a signed agreement, development can begin immediately with our proven framework approach. The accelerated timeline leverages existing components and streamlined processes.
+                  Development begins November 1st, 2025 following agreement signature. Our proven framework approach enables rapid delivery with accelerated timeline leveraging existing components and streamlined processes.
                 </p>
                 <div className="bg-white p-4 rounded border border-green-200">
-                  <p className="text-lg font-bold text-green-900">🚀 Target Go-Live: Q2 2026</p>
-                  <p className="text-sm text-gray-600 mt-1">Complete development, testing, and app store approval process</p>
+                  <p className="text-lg font-bold text-green-900">🚀 Target Go-Live: Q1 2026</p>
+                  <p className="text-sm text-gray-600 mt-1">16-week development cycle from November 2025 start</p>
                 </div>
               </div>
 
@@ -722,7 +706,7 @@ export default function CircusDailyEstimation() {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="font-medium">Target Go-Live:</span>
-                        <span className="font-bold text-red-600">Q1 2026</span>
+                        <span className="font-bold text-red-600">Q4 2025</span>
                       </div>
                     </div>
                   </div>
@@ -756,7 +740,7 @@ export default function CircusDailyEstimation() {
               </div>
 
               <div className="mt-8 bg-gray-800 text-white p-6 rounded-lg">
-                <h3 className="font-bold text-xl mb-4">Why Q2 2026 is Achievable</h3>
+                <h3 className="font-bold text-xl mb-4">Why Q1 2026 Timeline is Achievable</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
                     <h4 className="font-bold mb-2 text-blue-300">Proven Framework</h4>
