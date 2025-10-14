@@ -64,6 +64,16 @@ export default function CircusDailyEstimation() {
           >
             SSO Details
           </button>
+          <button
+            onClick={() => setActiveTab('roadmap')}
+            className={`px-6 py-3 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'roadmap' 
+                ? 'bg-red-600 text-white shadow-lg' 
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+          >
+            Roadmap
+          </button>
         </div>
 
         {activeTab === 'overview' && (
@@ -170,6 +180,95 @@ export default function CircusDailyEstimation() {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+
+              <div className="mt-8 bg-purple-50 rounded-lg p-6">
+                <h3 className="font-bold text-xl mb-4 text-purple-900">Third-Party Integrations Breakdown (10,000 euros)</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-bold text-lg mb-3 text-purple-800">CMS Integration (4,000 euros)</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span>• WordPress/Custom CMS API setup</span>
+                        <span>1,500 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Article synchronization system</span>
+                        <span>1,200 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Image/media content handling</span>
+                        <span>800 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Real-time content updates</span>
+                        <span>500 euros</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-bold text-lg mb-3 text-purple-800">Analytics Integration (2,500 euros)</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span>• Google Analytics 4 setup</span>
+                        <span>800 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Firebase Analytics integration</span>
+                        <span>700 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Custom event tracking</span>
+                        <span>600 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• User behavior analytics</span>
+                        <span>400 euros</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-bold text-lg mb-3 text-purple-800">Advertising Platform (2,000 euros)</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span>• Google AdMob integration</span>
+                        <span>900 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Banner and interstitial ads</span>
+                        <span>600 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Ad performance tracking</span>
+                        <span>500 euros</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-bold text-lg mb-3 text-purple-800">Additional Services (1,500 euros)</h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span>• Crash reporting (Crashlytics)</span>
+                        <span>400 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Push notification service</span>
+                        <span>500 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Social sharing APIs</span>
+                        <span>300 euros</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• App store optimization tools</span>
+                        <span>300 euros</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-8 bg-gray-50 rounded-lg p-6">
@@ -605,6 +704,212 @@ export default function CircusDailyEstimation() {
                   <div className="mt-4 bg-white p-4 rounded border">
                     <p className="text-sm text-gray-700"><strong>Includes:</strong> Complete SSO implementation for Google, Facebook, and Apple across iOS and Android platforms, with user profile management and security compliance.</p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'roadmap' && (
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold mb-6 text-gray-800">Development Roadmap & Timeline</h2>
+              
+              <div className="mb-8 bg-gradient-to-r from-green-50 to-blue-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                <h3 className="font-bold text-xl mb-3 text-green-800">Post-Agreement Timeline</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Once we have a signed agreement, development can begin immediately with our proven framework approach. The accelerated timeline leverages existing components and streamlined processes.
+                </p>
+                <div className="bg-white p-4 rounded border border-green-200">
+                  <p className="text-lg font-bold text-green-900">🚀 Target Go-Live: Q2 2026</p>
+                  <p className="text-sm text-gray-600 mt-1">Complete development, testing, and app store approval process</p>
+                </div>
+              </div>
+
+              <div className="grid lg:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="bg-blue-50 p-6 rounded-lg">
+                    <h3 className="font-bold text-lg mb-4 text-blue-900">Phase 1: Foundation (Weeks 1-4)</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-blue-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Project Setup & Configuration</p>
+                          <p className="text-sm text-gray-600">Framework deployment, Git repository, CI/CD pipeline</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-blue-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Circus Daily Branding Integration</p>
+                          <p className="text-sm text-gray-600">Visual identity, colors, logos, typography</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-blue-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Core Architecture Setup</p>
+                          <p className="text-sm text-gray-600">Database configuration, API structure</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-orange-50 p-6 rounded-lg">
+                    <h3 className="font-bold text-lg mb-4 text-orange-900">Phase 2: Core Development (Weeks 5-10)</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-orange-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Content Management System</p>
+                          <p className="text-sm text-gray-600">Article display, categories, search functionality</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-orange-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Navigation & User Interface</p>
+                          <p className="text-sm text-gray-600">Menu structure, screens, responsive design</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-orange-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Third-Party Integrations</p>
+                          <p className="text-sm text-gray-600">CMS, analytics, advertising platforms</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-purple-50 p-6 rounded-lg">
+                    <h3 className="font-bold text-lg mb-4 text-purple-900">Phase 3: Testing & Optimization (Weeks 11-14)</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Quality Assurance Testing</p>
+                          <p className="text-sm text-gray-600">Functional testing, performance optimization</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Device Compatibility Testing</p>
+                          <p className="text-sm text-gray-600">iOS and Android across multiple devices</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Bug Fixes & Performance Tuning</p>
+                          <p className="text-sm text-gray-600">Issue resolution, speed optimization</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <div className="bg-green-50 p-6 rounded-lg">
+                    <h3 className="font-bold text-lg mb-4 text-green-900">Phase 4: Deployment (Weeks 15-16)</h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-green-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">App Store Submission</p>
+                          <p className="text-sm text-gray-600">iOS App Store and Google Play Store</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-green-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Production Environment Setup</p>
+                          <p className="text-sm text-gray-600">Server configuration, monitoring systems</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="w-3 h-3 bg-green-600 rounded-full mt-1 mr-3 flex-shrink-0"></div>
+                        <div>
+                          <p className="font-medium">Launch Preparation</p>
+                          <p className="text-sm text-gray-600">Final checks, launch strategy, documentation</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl border-2 border-red-200">
+                    <h3 className="font-bold text-xl mb-4 text-red-900">Fast Track Option</h3>
+                    <p className="text-gray-700 mb-4">
+                      For urgent market entry, we can accelerate development with additional resources:
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="font-medium">Accelerated Timeline:</span>
+                        <span className="font-bold text-red-600">10-12 weeks</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="font-medium">Additional Cost:</span>
+                        <span className="font-bold text-red-600">+15,000 euros</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="font-medium">Target Go-Live:</span>
+                        <span className="font-bold text-red-600">Q1 2026</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+                    <h3 className="font-bold text-lg mb-3 text-yellow-900">Key Milestones</h3>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span>• Contract Signature to Development Start</span>
+                        <span className="font-medium">1 week</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• First Beta Version Available</span>
+                        <span className="font-medium">6 weeks</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Feature-Complete Version</span>
+                        <span className="font-medium">10 weeks</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• App Store Submission</span>
+                        <span className="font-medium">14 weeks</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>• Public Launch Ready</span>
+                        <span className="font-medium">16 weeks</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-gray-800 text-white p-6 rounded-lg">
+                <h3 className="font-bold text-xl mb-4">Why Q2 2026 is Achievable</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div>
+                    <h4 className="font-bold mb-2 text-blue-300">Proven Framework</h4>
+                    <p className="text-sm text-gray-300">Building on battle-tested codebase reduces development risks and accelerates delivery.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-green-300">Experienced Team</h4>
+                    <p className="text-sm text-gray-300">Our developers have delivered similar projects and understand the requirements.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-orange-300">Streamlined Process</h4>
+                    <p className="text-sm text-gray-300">Optimized workflow with minimal bureaucracy and fast decision-making cycles.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-lg">
+                <div className="text-center">
+                  <h3 className="font-bold text-2xl mb-2">Ready to Start?</h3>
+                  <p className="text-lg opacity-90 mb-4">Let's discuss your requirements and finalize the agreement.</p>
+                  <p className="text-sm opacity-75">Contact us to begin the Circus Daily mobile app development process.</p>
                 </div>
               </div>
             </div>
