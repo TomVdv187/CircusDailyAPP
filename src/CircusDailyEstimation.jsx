@@ -12,7 +12,7 @@ export default function CircusDailyEstimation() {
             <img 
               src="https://lfs-ipx.circusdaily.com/_ipx/f_webp,sharpen_100/local/CircusDaily_H_Red_FR.svg" 
               alt="Circus Daily Logo" 
-              className="h-12 mr-4 filter brightness-0 invert"
+              className="h-16 mr-6 filter brightness-0 invert"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'block';
