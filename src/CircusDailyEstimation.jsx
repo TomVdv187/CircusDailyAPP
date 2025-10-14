@@ -172,11 +172,11 @@ export default function CircusDailyEstimation() {
                 </table>
               </div>
 
-              <div className="mt-8 bg-purple-50 rounded-lg p-6">
-                <h3 className="font-bold text-xl mb-4 text-purple-900">Third-Party Integrations Breakdown (10,000 euros)</h3>
+              <div className="mt-8 bg-red-50 rounded-lg p-6">
+                <h3 className="font-bold text-xl mb-4 text-red-900">Third-Party Integrations Breakdown (10,000 euros)</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-bold text-lg mb-3 text-purple-800">CMS Integration (4,000 euros)</h4>
+                    <h4 className="font-bold text-lg mb-3 text-red-700">CMS Integration (4,000 euros)</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span>• WordPress/Custom CMS API setup</span>
@@ -198,7 +198,7 @@ export default function CircusDailyEstimation() {
                   </div>
                   
                   <div>
-                    <h4 className="font-bold text-lg mb-3 text-purple-800">Analytics Integration (2,500 euros)</h4>
+                    <h4 className="font-bold text-lg mb-3 text-red-700">Analytics Integration (2,500 euros)</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span>• Google Analytics 4 setup</span>
@@ -220,7 +220,7 @@ export default function CircusDailyEstimation() {
                   </div>
                   
                   <div>
-                    <h4 className="font-bold text-lg mb-3 text-purple-800">Advertising Platform (2,000 euros)</h4>
+                    <h4 className="font-bold text-lg mb-3 text-red-700">Advertising Platform (2,000 euros)</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span>• Google AdMob integration</span>
@@ -238,7 +238,7 @@ export default function CircusDailyEstimation() {
                   </div>
                   
                   <div>
-                    <h4 className="font-bold text-lg mb-3 text-purple-800">Additional Services (1,500 euros)</h4>
+                    <h4 className="font-bold text-lg mb-3 text-red-700">Additional Services (1,500 euros)</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span>• Crash reporting (Crashlytics)</span>
