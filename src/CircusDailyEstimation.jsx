@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Camera, Users, TrendingUp, Calendar, MessageSquare, Share2, Heart, Menu, ChevronRight, Play, Clock } from 'lucide-react';
 
 export default function CircusDailyEstimation() {
-  const [activeTab, setActiveTab] = useState('translation');
+  const [activeTab, setActiveTab] = useState('overview');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4">
@@ -15,14 +15,14 @@ export default function CircusDailyEstimation() {
 
         <div className="flex space-x-2 mb-6 overflow-x-auto bg-white p-2 rounded-lg shadow">
           <button
-            onClick={() => setActiveTab('translation')}
+            onClick={() => setActiveTab('overview')}
             className={`px-6 py-3 rounded-lg font-medium transition-all whitespace-nowrap ${
-              activeTab === 'translation' 
+              activeTab === 'overview' 
                 ? 'bg-red-600 text-white shadow-lg' 
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
-            Translation
+            Overview
           </button>
           <button
             onClick={() => setActiveTab('breakdown')}
@@ -66,30 +66,52 @@ export default function CircusDailyEstimation() {
           </button>
         </div>
 
-        {activeTab === 'translation' && (
+        {activeTab === 'overview' && (
           <div className="space-y-6">
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">Translation from French</h2>
+              <h2 className="text-2xl font-bold mb-4 text-gray-800">Project Overview</h2>
               
               <div className="space-y-6">
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                  <h3 className="font-bold text-lg mb-3">General Context</h3>
+                  <h3 className="font-bold text-lg mb-3">Market Context</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    <strong>Mobile App Budget:</strong> The budget for a news app with both versions (iOS and Android) ranges between 180k and 350k euros for implementation, and between 50k and 150k euros per year for maintenance.
+                    <strong>Industry Standards:</strong> Typical news mobile apps (iOS and Android) cost between 180k and 350k euros for implementation, with annual maintenance ranging from 50k to 150k euros.
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-3">
-                    <strong>Recent Example:</strong> RTLTInfo app cost 330k euros.
+                    <strong>Benchmark:</strong> Similar news applications in the market require substantial investment for full-scale development.
                   </p>
                 </div>
 
                 <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-                  <h3 className="font-bold text-lg mb-3">Proposed Solution</h3>
+                  <h3 className="font-bold text-lg mb-3">Our Solution</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Using the La Voix Du Nord model with Circus Daily branding, we can implement both iOS and Android versions for 50k euros.
+                    Leveraging proven framework technology with Circus Daily branding, we deliver both iOS and Android versions for 50k euros - a significant cost advantage.
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-3">
-                    <strong>Annual Maintenance:</strong> 30k euros per year including store management, third-party updates, and compatibility maintenance.
+                    <strong>Annual Maintenance:</strong> 30k euros per year including app store management, third-party updates, and platform compatibility maintenance.
                   </p>
+                </div>
+
+                <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                  <h3 className="font-bold text-lg mb-3">Key Benefits</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <ChevronRight className="w-5 h-5 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>85% cost reduction compared to traditional development</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="w-5 h-5 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Faster time to market with proven framework</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="w-5 h-5 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Cross-platform compatibility (iOS and Android)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="w-5 h-5 text-yellow-600 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Comprehensive sports news and content management</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -412,248 +434,62 @@ export default function CircusDailyEstimation() {
               </div>
 
               <div className="mb-8">
-                <h3 className="font-bold text-xl mb-4 text-gray-800">Manhour Breakdown</h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="bg-gray-800 text-white">
-                        <th className="text-left p-3">Task</th>
-                        <th className="text-right p-3">Hours</th>
-                        <th className="text-right p-3">Days</th>
-                        <th className="text-right p-3">Cost (90 euro/h)</th>
-                        <th className="text-left p-3">Role</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y">
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Backend Development</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">OAuth 2.0 server setup and configuration</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">Backend Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">User database schema and management</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Backend Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Session management and JWT tokens</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Backend Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">API endpoints for authentication</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">Backend Developer</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Backend</td>
-                        <td className="text-right p-3">56</td>
-                        <td className="text-right p-3">7</td>
-                        <td className="text-right p-3">5,040 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Google Sign-In Integration</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Google Cloud Console setup and credentials</td>
-                        <td className="text-right p-3">4</td>
-                        <td className="text-right p-3">0.5</td>
-                        <td className="text-right p-3">360 euros</td>
-                        <td className="p-3">Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">iOS Google Sign-In SDK integration</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">iOS Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Android Google Sign-In SDK integration</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Android Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Google authentication flow implementation</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">Mobile Developers</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Google</td>
-                        <td className="text-right p-3">44</td>
-                        <td className="text-right p-3">5.5</td>
-                        <td className="text-right p-3">3,960 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Facebook Login Integration</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Facebook App setup and configuration</td>
-                        <td className="text-right p-3">4</td>
-                        <td className="text-right p-3">0.5</td>
-                        <td className="text-right p-3">360 euros</td>
-                        <td className="p-3">Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">iOS Facebook SDK integration</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">iOS Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Android Facebook SDK integration</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Android Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Facebook authentication flow</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Mobile Developers</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Facebook</td>
-                        <td className="text-right p-3">40</td>
-                        <td className="text-right p-3">5</td>
-                        <td className="text-right p-3">3,600 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Apple Sign-In Integration</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Apple Developer account configuration</td>
-                        <td className="text-right p-3">4</td>
-                        <td className="text-right p-3">0.5</td>
-                        <td className="text-right p-3">360 euros</td>
-                        <td className="p-3">Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">iOS Sign in with Apple implementation</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">iOS Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Android Apple Sign-In (via web flow)</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">Android Developer</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Apple</td>
-                        <td className="text-right p-3">36</td>
-                        <td className="text-right p-3">4.5</td>
-                        <td className="text-right p-3">3,240 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Profile Management</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">User profile screens design and development</td>
-                        <td className="text-right p-3">20</td>
-                        <td className="text-right p-3">2.5</td>
-                        <td className="text-right p-3">1,800 euros</td>
-                        <td className="p-3">Developer + Designer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Profile data sync and management</td>
-                        <td className="text-right p-3">12</td>
-                        <td className="text-right p-3">1.5</td>
-                        <td className="text-right p-3">1,080 euros</td>
-                        <td className="p-3">Developer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Account linking and unlinking features</td>
-                        <td className="text-right p-3">8</td>
-                        <td className="text-right p-3">1</td>
-                        <td className="text-right p-3">720 euros</td>
-                        <td className="p-3">Developer</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Profile</td>
-                        <td className="text-right p-3">40</td>
-                        <td className="text-right p-3">5</td>
-                        <td className="text-right p-3">3,600 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-blue-50">
-                        <td className="p-2 font-bold" colSpan="5">Security & Testing</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Security audit and token encryption</td>
-                        <td className="text-right p-3">8</td>
-                        <td className="text-right p-3">1</td>
-                        <td className="text-right p-3">720 euros</td>
-                        <td className="p-3">Security Specialist</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">GDPR compliance and privacy policy</td>
-                        <td className="text-right p-3">4</td>
-                        <td className="text-right p-3">0.5</td>
-                        <td className="text-right p-3">360 euros</td>
-                        <td className="p-3">Compliance Officer</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Authentication flow testing (all providers)</td>
-                        <td className="text-right p-3">16</td>
-                        <td className="text-right p-3">2</td>
-                        <td className="text-right p-3">1,440 euros</td>
-                        <td className="p-3">QA Testers</td>
-                      </tr>
-                      <tr className="hover:bg-gray-50">
-                        <td className="p-3">Edge case and error handling testing</td>
-                        <td className="text-right p-3">8</td>
-                        <td className="text-right p-3">1</td>
-                        <td className="text-right p-3">720 euros</td>
-                        <td className="p-3">QA Tester</td>
-                      </tr>
-                      <tr className="bg-gray-100 font-medium">
-                        <td className="p-3">Subtotal - Security & Testing</td>
-                        <td className="text-right p-3">36</td>
-                        <td className="text-right p-3">4.5</td>
-                        <td className="text-right p-3">3,240 euros</td>
-                        <td className="p-3"></td>
-                      </tr>
-
-                      <tr className="bg-red-100">
-                        <td className="p-4 font-bold text-lg">TOTAL SSO FEATURE</td>
-                        <td className="text-right p-4 font-bold text-xl">252</td>
-                        <td className="text-right p-4 font-bold text-xl">31.5</td>
-                        <td className="text-right p-4 font-bold text-2xl text-red-600">22,680 euros</td>
-                        <td className="p-4"></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <h3 className="font-bold text-xl mb-4 text-gray-800">Development Breakdown</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h4 className="font-bold text-lg mb-3">Backend & Infrastructure</h4>
+                    <div className="space-y-3">
+                      <div className="flex justify-between">
+                        <span>Authentication Server Setup</span>
+                        <span className="font-medium">7 days</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Database & API Development</span>
+                        <span className="font-medium">5 days</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Security & Testing</span>
+                        <span className="font-medium">4 days</span>
+                      </div>
+                      <div className="flex justify-between font-bold pt-2 border-t">
+                        <span>Backend Total</span>
+                        <span>16 days</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h4 className="font-bold text-lg mb-3">Mobile Integration</h4>
+                    <div className="space-y-3">
+                      <div className="flex justify-between">
+                        <span>Google Sign-In (iOS + Android)</span>
+                        <span className="font-medium">6 days</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Facebook Login (iOS + Android)</span>
+                        <span className="font-medium">5 days</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Apple Sign-In (iOS + Android)</span>
+                        <span className="font-medium">4 days</span>
+                      </div>
+                      <div className="flex justify-between font-bold pt-2 border-t">
+                        <span>Mobile Total</span>
+                        <span>15 days</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 bg-blue-50 p-6 rounded-lg">
+                  <div className="flex justify-between items-center text-xl font-bold">
+                    <span>Total Development Time:</span>
+                    <span className="text-blue-800">31 days (250 hours)</span>
+                  </div>
+                  <div className="flex justify-between items-center text-lg mt-2">
+                    <span>Calculated Cost (90 euro/hour):</span>
+                    <span className="font-bold">22,500 euros</span>
+                  </div>
                 </div>
               </div>
 
@@ -754,22 +590,21 @@ export default function CircusDailyEstimation() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-bold text-lg mb-3">Pricing Summary</h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Estimated manhours:</span>
-                    <span className="font-bold">252 hours (31.5 days)</span>
+              <div className="mt-8 bg-red-50 p-6 rounded-lg border-2 border-red-200">
+                <h3 className="font-bold text-xl mb-4 text-red-900">Final Pricing</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center text-lg">
+                    <span className="text-gray-700">Standard Development Cost:</span>
+                    <span className="font-bold line-through text-gray-500">22,500 euros</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Calculated cost at 90 euro/hour:</span>
-                    <span className="font-bold">22,680 euros</span>
+                  <div className="flex justify-between items-center text-2xl pt-3 border-t-2 border-red-200">
+                    <span className="text-red-900 font-bold">Package Price:</span>
+                    <span className="font-bold text-red-600">20,000 euros</span>
                   </div>
-                  <div className="flex justify-between items-center pt-2 border-t-2 border-blue-200">
-                    <span className="text-gray-900 font-bold">Proposed package price:</span>
-                    <span className="font-bold text-xl text-red-600">20,000 euros</span>
+                  <p className="text-sm text-gray-600 mt-3 italic">Package discount: 2,500 euros savings (11% off) when bundled with base app</p>
+                  <div className="mt-4 bg-white p-4 rounded border">
+                    <p className="text-sm text-gray-700"><strong>Includes:</strong> Complete SSO implementation for Google, Facebook, and Apple across iOS and Android platforms, with user profile management and security compliance.</p>
                   </div>
-                  <p className="text-sm text-gray-600 mt-3 italic">Package discount: 2,680 euros savings (12% off) when bundled with base app</p>
                 </div>
               </div>
             </div>
