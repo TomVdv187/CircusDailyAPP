@@ -147,40 +147,89 @@ export default function CircusDailyEstimation() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
-                    <tr className="hover:bg-gray-50">
-                      <td className="p-4">Framework setup and Git configuration</td>
-                      <td className="text-right p-4 font-bold">15,000 euros</td>
-                      <td className="text-right p-4 text-sm">Rossel baseline</td>
+                    <tr className="bg-blue-50">
+                      <td className="p-2 font-bold" colSpan="3">COMPOSANTS / PREREQUIS</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="p-4">Visual identity customization</td>
-                      <td className="text-right p-4 font-bold">5,000 euros</td>
-                      <td className="text-right p-4 text-sm">Brand integration</td>
+                      <td className="p-4">Clonage et initialisation des environnements</td>
+                      <td className="text-right p-4 font-bold">15,000 €</td>
+                      <td className="text-right p-4 text-sm">Framework SI</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="p-4">Menu and screens configuration</td>
-                      <td className="text-right p-4 font-bold">10,000 euros</td>
-                      <td className="text-right p-4 text-sm">Navigation setup</td>
+                      <td className="p-4">Configuration identité visuelle Circus Daily</td>
+                      <td className="text-right p-4 font-bold">5,000 €</td>
+                      <td className="text-right p-4 text-sm">Logos, couleurs, police</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="p-4">Third-party integrations</td>
-                      <td className="text-right p-4 font-bold">10,000 euros</td>
-                      <td className="text-right p-4 text-sm">CMS, ads, analytics</td>
+                      <td className="p-4">Configuration menus, sections et écrans</td>
+                      <td className="text-right p-4 font-bold">14,800 €</td>
+                      <td className="text-right p-4 text-sm">Navigation et contenu</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="p-4">Project coordination</td>
-                      <td className="text-right p-4 font-bold">5,000 euros</td>
-                      <td className="text-right p-4 text-sm">Management</td>
+                      <td className="p-4">Intégration Homes / Sections</td>
+                      <td className="text-right p-4 font-bold">5,000 €</td>
+                      <td className="text-right p-4 text-sm">Structure de contenu</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="p-4">Quality assurance and testing</td>
-                      <td className="text-right p-4 font-bold">5,000 euros</td>
-                      <td className="text-right p-4 text-sm">QA testing</td>
+                      <td className="p-4">Intégration page article</td>
+                      <td className="text-right p-4 font-bold">5,000 €</td>
+                      <td className="text-right p-4 text-sm">Affichage articles</td>
                     </tr>
-                    <tr className="bg-yellow-100">
-                      <td className="p-4 font-bold text-lg">TOTAL</td>
-                      <td className="text-right p-4 font-bold text-2xl text-red-600">50,000 euros</td>
-                      <td className="text-right p-4"></td>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Intégration résultats sportifs Idalgo</td>
+                      <td className="text-right p-4 font-bold">2,000 €</td>
+                      <td className="text-right p-4 text-sm">API sport</td>
+                    </tr>
+                    <tr className="bg-blue-50">
+                      <td className="p-2 font-bold" colSpan="3">INTÉGRATION ET CONFIGURATION</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">CMS WEB</td>
+                      <td className="text-right p-4 font-bold">1,000 €</td>
+                      <td className="text-right p-4 text-sm">Configuration CMS</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Ad Management (GAM)</td>
+                      <td className="text-right p-4 font-bold">2,000 €</td>
+                      <td className="text-right p-4 text-sm">Publicités</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Tracking Analytics Piano</td>
+                      <td className="text-right p-4 font-bold">4,000 €</td>
+                      <td className="text-right p-4 text-sm">Analytics</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">CMP Didomi</td>
+                      <td className="text-right p-4 font-bold">3,000 €</td>
+                      <td className="text-right p-4 text-sm">Consentement</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Gestion multilinguisme</td>
+                      <td className="text-right p-4 font-bold">3,000 €</td>
+                      <td className="text-right p-4 text-sm">Support langues</td>
+                    </tr>
+                    <tr className="bg-blue-50">
+                      <td className="p-2 font-bold" colSpan="3">COORDINATION & QUALITÉ</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Coordination Globale</td>
+                      <td className="text-right p-4 font-bold">5,000 €</td>
+                      <td className="text-right p-4 text-sm">Management projet</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="p-4">Quality Management / Testing</td>
+                      <td className="text-right p-4 font-bold">5,000 €</td>
+                      <td className="text-right p-4 text-sm">QA et tests</td>
+                    </tr>
+                    <tr className="bg-red-50">
+                      <td className="p-4 font-bold text-lg">MONTANT ESTIMÉ RÉEL</td>
+                      <td className="text-right p-4 font-bold text-xl text-red-600">57,800 €</td>
+                      <td className="text-right p-4 text-sm">Coût détaillé</td>
+                    </tr>
+                    <tr className="bg-green-100">
+                      <td className="p-4 font-bold text-lg">NOTRE PROPOSITION</td>
+                      <td className="text-right p-4 font-bold text-2xl text-green-600">50,000 €</td>
+                      <td className="text-right p-4 text-sm">Offre commerciale</td>
                     </tr>
                   </tbody>
                 </table>
@@ -384,17 +433,51 @@ export default function CircusDailyEstimation() {
                   </tr>
                   
                   <tr className="bg-red-100">
-                    <td className="p-4 font-bold text-lg">TOTAL</td>
-                    <td className="text-right p-4 font-bold text-xl">576</td>
-                    <td className="text-right p-4 font-bold text-xl">51,840 euros</td>
+                    <td className="p-4 font-bold text-lg">MONTANT CALCULÉ</td>
+                    <td className="text-right p-4 font-bold text-xl">642</td>
+                    <td className="text-right p-4 font-bold text-xl">57,800 euros</td>
+                  </tr>
+                  <tr className="bg-green-100">
+                    <td className="p-4 font-bold text-lg">NOTRE OFFRE</td>
+                    <td className="text-right p-4 font-bold text-xl">556</td>
+                    <td className="text-right p-4 font-bold text-xl">50,000 euros</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg border border-blue-200">
+              <h3 className="font-bold text-lg mb-3 text-blue-900">Analyse Tarifaire</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-bold mb-3 text-blue-700">Coût Réel Estimé</h4>
+                  <p className="text-gray-700 mb-3">
+                    Le montant calculé pour développer cette application mobile est de <strong>57,800 euros</strong> en se basant sur:
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• 642 heures de développement</li>
+                    <li>• Taux horaire de 90 euros</li>
+                    <li>• Intégrations complexes requises</li>
+                    <li>• Standards de qualité élevés</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-bold mb-3 text-green-700">Notre Proposition</h4>
+                  <p className="text-gray-700 mb-3">
+                    Nous proposons de réaliser ce projet pour <strong>50,000 euros</strong>, soit une réduction de <strong>7,800 euros</strong> par rapport au coût réel.
+                  </p>
+                  <div className="bg-green-100 p-3 rounded border border-green-200">
+                    <p className="text-green-800 font-medium text-sm">
+                      Économie de 13.5% grâce à notre expertise du framework Rossel et notre engagement commercial.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-6 bg-green-50 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-3">Value Justification</h3>
-              <p className="text-gray-700">The 50k euro price represents significant savings compared to building from scratch (180k-350k). By leveraging the proven Rossel framework, we reduce development time by 70% while maintaining high quality and full feature parity with established news apps.</p>
+              <h3 className="font-bold text-lg mb-3">Justification de la Valeur</h3>
+              <p className="text-gray-700">Le prix de 50k euros représente des économies significatives par rapport à un développement from scratch (180k-350k). En utilisant le framework éprouvé Rossel, nous réduisons le temps de développement de 70% tout en maintenant une qualité élevée et une parité complète avec les applications de presse établies.</p>
             </div>
           </div>
         )}
